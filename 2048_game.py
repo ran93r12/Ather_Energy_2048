@@ -35,7 +35,6 @@ class Board:
 
 
 
-
 class Game:
     def __init__(self,gamepanel):
         self.gamepanel=gamepanel
@@ -47,3 +46,5 @@ class Game:
         self.gamepanel.paintGrid()
         self.gamepanel.window.bind('<Key>', self.link_keys)
         self.gamepanel.window.mainloop()
+gamepanel =Board()
+game2048.start()
