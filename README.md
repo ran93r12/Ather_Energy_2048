@@ -31,7 +31,7 @@ make the chances to win high.
 
 ## ● Code walkthrough
 A sneky detail was provided in  **2048_game.py** file, where the functionality  of each function 
-is broken down, The entire documentation would be here.
+is broken down.
 
 ## ● Scope of making this an 8x8 from 4x4
 
