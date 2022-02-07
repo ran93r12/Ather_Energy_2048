@@ -44,13 +44,6 @@ Absolutely, Yes! we can change upto a certain value, Here,there's a varibale **(
 A higher tile of  **2^17** possible with 16 squares.
 
 
-
-## Screenshots
-- Working 2048 game.
-
-![App Screenshot](https://github.com/ran93r1210/Ather_Energy_2048/blob/main/Assets/2048.png)
-
-
 ## Installation
 
 Clone the project
@@ -75,6 +68,14 @@ Run
 ```bash
       python 2048.py
 ```
+
+
+## Screenshots
+- Working 2048 game.
+
+![App Screenshot](https://github.com/ran93r1210/Ather_Energy_2048/blob/main/Assets/2048.png)
+
+
 
 ## Tech Stack
 
