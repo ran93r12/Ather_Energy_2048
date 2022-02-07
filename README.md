@@ -10,15 +10,10 @@ This is a little version of popular game 2048  designed using Python-Tkinter mod
 # Discussion Objectives
 
 ## ● Design principles used
-The design of solution was implemented with a GUI module in Python (tkinter), Here we would having
-board of 4x4 size and two numbers by default, the task is used to gain the highest number on the tiles
-by moving tiles in any direction without filling entire grid. There is no specific optimized
-algorithm as there is random nature in game.
+The design of the solution was implemented with a GUI module in Python (tkinter). Here we would have a board of 4x4 size and two numbers by default, the task is used to gain the highest number on the tiles by moving tiles in any direction without filling the entire grid. There is no specific optimized algorithm as there is random nature in the game.
 
 ## ● Thoughts
-As by solving the game, came to the conclusion that we need to traverse each and every cell in the gird and perform operation in order to get the target number.
-So, here all the operations are broken into functions, and GUI was implemented as a class, each functionality was broken down into a 
-small functions inorder to have a high readability.
+As I was solving the game, I came to the conclusion that we need to traverse each and every cell in the grid and perform an operation in order to get the target number. So, here all the operations are broken into functions, and GUI was implemented as a class, each functionality was broken down into small functions in order to have a high readability.
 
 ## ● Problem Solution
 The solution is to traverse throughout the grid and to  maintain a large value at any corner, This
@@ -35,9 +30,9 @@ is broken down.
 
 ## ● Scope of making this an 8x8 from 4x4
 
-As the solution is generic, by increasing grid size doesn't have more impact on
-the code, but while solving we need to taken care as cells increases its hard to keep
-the high value at corner of the grid. Here, there's a varibale **(size)** to change the grid size.
+As the solution is generic, increasing grid size doesn't have more impact on the code,
+but while solving we need to take care as cells increase its hard to keep the high value
+at the corner of the grid. Here, there's a variable **(size)** to change the grid size.
 
 ## ● Change from 2048 to 4096 as end number
 Absolutely, Yes! we can change upto a certain value, Here,there's a varibale **(highest)** to change the number.
