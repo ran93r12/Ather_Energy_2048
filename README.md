@@ -48,7 +48,7 @@ A higher tile of  **2^17** possible with 16 squares.
 ## Screenshots
 - Working 2048 game.
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/ran93r1210/Ather_Energy_2048/blob/main/Assets/2048.png)
 
 
 ## Installation
