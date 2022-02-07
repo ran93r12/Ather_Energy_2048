@@ -3,50 +3,20 @@ from tkinter import messagebox
 import random
 
 
-class Board:
+class GamePlay():
+    Frame_Color = "#faf8ef"
+    Board_Color = "#bbada0"
+    ForeGround_Color = {0: "#d6cdc4", 2:"#464646", 4:"#464646", 8:"#ffffff", 16:"#ffffff", 32:"#ffffff", 64:"#ffffff", 128:"#ffffff", 256:"#ffffff", 512:"#ffffff", 1024:"#ffffff", 2048:"#ffffff", 4096:"#ffffff", 8192:"#ffffff", 16384:"#ffffff", 32768:"#ffffff", 65536:"#ffffff", 131072:"#ffffff"}
+    BackGround_Color = {0: "#d6cdc4", 2:"#eee4da", 4:"#ede0c8", 8:"#f2b179", 16:"#f59563", 32:"#f67c5f", 64:"#f65e3b", 128:"#edcf72", 256:"#edcc61", 512:"#edc850", 1024:"#edc53f", 2048:"#edc22e", 4096:"#464646", 8192:"#3d3d3d", 16384:"#19191a", 32768:"#111111", 65536:"#09090a", 131072:"#000000"}
+
     def __init__(self):
-        self.n=4
-        self.window=Tk()
-        self.window.title('2048 Game')
-        self.gameArea=Frame(self.window,bg= 'azure3')
-        self.board=[]
-        self.gridCell=[[0]*4 for i in range(4)]
-        self.compress=False
-        self.merge=False
-        self.moved=False
-        self.score=0
-        for i in range(4):
-            rows=[]
-            for j in range(4):
-                l=Label(self.gameArea,text='',bg='azure4',
-                font=('arial',22,'bold'),width=4,height=2)
-                l.grid(row=i,column=j,padx=7,pady=7)
-                rows.append(l);
-            self.board.append(rows)
-        self.gameArea.grid()
-    def reverse(self):
-        for ind in range(4):
-            i=0
-            j=3
-            while(i<j):
-                self.gridCell[ind][i],self.gridCell[ind][j]=self.gridCell[ind][j],self.gridCell[ind][i]
-                i+=1
-                j-=1
-    def transpose(self):
-        self.gridCell=[list(t)for t in zip(*self.gridCell)]
-
-
-class Game:
-    def __init__(self,gamepanel):
-        self.gamepanel=gamepanel
-        self.end=False
-        self.won=False
-    def start(self):
-        self.gamepanel.random_cell()
-        self.gamepanel.random_cell()
-        self.gamepanel.paintGrid()
-        self.gamepanel.window.bind('<Key>', self.link_keys)
-        self.gamepanel.window.mainloop()
-gamepanel =Board()
-game2048 = Game( gamepanel)
-game2048.start()
+        global score
+        self.top_frame_colour = Frame_Color
+        self.board_frame_colour = Board_Color
+        self.foreground_colours = ForeGround_Color
+        self.background_colours = BackGround_Color
+        self.board_font = ("Courier", 15, "bold")
+        self.game_font = ("Courier", 25, "bold")
+        self.home_game_font = ("Courier", 35, "bold")
+        self.score_font = ("Promesh", 10, "bold")
+        self.window = tk.Tk()
