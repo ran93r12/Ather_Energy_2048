@@ -26,7 +26,7 @@ def move_up(s, board):
                     board[i][j] = board[i+1][j]
                     board[i+1][j] = 0
     return board  # return the updated board
-
+ # to move the grids down all and merge them of the equal number.
 def move_down(s, board):
     global score
     for c in range(s):
@@ -54,7 +54,7 @@ def move_down(s, board):
                     board[i-1][j] = 0
                 i -= 1
     return board  # return the updated board
-
+ # to move the girds left and merge them of the equal number.
 def move_left(s, board):
     global score
     for c in range(s):
@@ -76,7 +76,7 @@ def move_left(s, board):
                     board[i][j] = board[i][j+1]
                     board[i][j+1] = 0
     return board # return the updated board
-
+# to move the girds right and merge them of the equal number.
 def move_right(s, board):
     global score
     for c in range(s):
